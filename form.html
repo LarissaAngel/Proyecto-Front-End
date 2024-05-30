@@ -25,29 +25,29 @@
     </head>  
     <body> 
         <div class="form-container">
-            <form id="form">
-                <h2>Solicite su receta</h2>
-                <div class="field">
-                    <label for="to_name">Nombre</label>
-                    <input type="text" name="to_name" id="to_name">
-                  </div>
-      
-                  <div class="field">
-                      <label for="email_id">Mail</label>
-                      <input type="text" name="email_id" id="email_id">
-                  </div>
-      
-                  <div class="field mensaje">
-                    <label for="mensagem">Mensaje</label>
-                    <input type="text" name="mensagem" id="mensagem">
-                  </div>
-                  
+            
                 
-                  <input type="submit" id="button" value="Enviar" >
-              </form>
-                
+         <form id="form">
+                    <h2>Solicite su receta</h2>
+            <h2>Deje su mensaje:</h2>
+            <div class="field">
+              <label for="to_name">Nombre</label>
+              <input type="text" name="to_name" id="to_name">
+            </div>
 
-            </form>
+            <div class="field">
+                <label for="email_id">Mail</label>
+                <input type="text" name="email_id" id="email_id">
+            </div>
+
+            <div class="field mensaje">
+              <label for="mensagem">Mensaje</label>
+              <input type="text" name="mensagem" id="mensagem">
+            </div>
+            
+          
+            <input type="submit" id="button" value="Send Email" >
+        </form>
             <script type="text/javascript"
                     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
           
@@ -55,7 +55,7 @@
                 emailjs.init('qmDtdUFqPXBtAeU9D')
               </script>
             <script src="form.js"></script>  
-        </div>
+     </div>
           
             
     </body>
