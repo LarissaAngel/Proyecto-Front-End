@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Larissa Angel" content="Larissa Angel"/>
+        <meta name="Larissa" content="Larissa Angel Pereira Vilela"/>
+        <meta name="description" content="¡Descubre los deliciosos brigadeiros y brownies artesanales de Lari Gourmet! ¡Disfruta de brigadeiros de chocolate, maní, coco y confeti, además de brownies de chocolate, maní y nueces. Experimenta el sabor artesanal e irresistible en cada bocado!">
+        <meta name="keywords" content="Lari Gourmet, brigadeiros, brownies, chocolate, maní, coco, confeti, nueces, dulces artesanales, postres gourmet">
+        <meta name="keywords" content="Lari Gourmet, brigadeiros, brownies, chocolate, amendoim, maní, coco, confite, nueces, dulces gourmet, postres artesanales, repostería casera, dulces brasileños, delicias dulces">
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="Lari Gourmet - Deliciosos Brigadeiros y Brownies Artesanales">
+        <meta property="og:description" content="¡Descubre los deliciosos brigadeiros y brownies artesanales de Lari Gourmet! ¡Disfruta de brigadeiros de chocolate, maní, coco y confeti, además de brownies de chocolate, maní y nueces. Experimenta el sabor artesanal e irresistible en cada bocado!">
+        <meta property="og:image" content="https://github.com/LarissaAngel/Proyecto-Front-End/blob/main/img.lari/Lari.png?raw=true">
+        <meta property="og:url" content="https://example.com/minha-pagina.html">
+        <meta property="og:type" content="website">
+        <!-- Open Graph meta tags -->
+        <meta name="locality" content="Buenos Aires">
+        <meta name="region" content="CABA">
+        <meta name="country-name" content="Argentina">
+        <title>Formulário Lari Gourmet</title>
+        <link rel="icon" href="https://raw.githubusercontent.com/LarissaAngel/Proyecto-Front-End/main/img.lari/Lari.ico">
+        <link rel="stylesheet" href="form.css">
+    </head>  
+    <body> 
+        <div class="form-container">
+            <form id="form">
+                <h2>Solicite su receta</h2>
+                <div class="field">
+                    <label for="to_name">Nombre</label>
+                    <input type="text" name="to_name" id="to_name">
+                  </div>
+      
+                  <div class="field">
+                      <label for="email_id">Mail</label>
+                      <input type="text" name="email_id" id="email_id">
+                  </div>
+      
+                  <div class="field mensaje">
+                    <label for="mensagem">Mensaje</label>
+                    <input type="text" name="mensagem" id="mensagem">
+                  </div>
+                  
+                
+                  <input type="submit" id="button" value="Enviar" >
+              </form>
+                
+
+            </form>
+            <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+          
+            <script type="text/javascript">
+                emailjs.init('qmDtdUFqPXBtAeU9D')
+              </script>
+            <script src="form.js"></script>  
+        </div>
+          
+            
+    </body>
+</html>

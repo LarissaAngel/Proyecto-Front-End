@@ -1,0 +1,74 @@
+/*https://github.com/LarissaAngel/Proyecto-Front-End/blob/main/img.lari/Lari.png?raw=true*/
+body {
+    font-family: "Bree Serif", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #FE8410;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 100px; /* Ajusta este valor según sea necesario */
+}
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white; /* Asegúrate de que el texto sea legible sobre la imagen de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #261108;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9; /* Ajusta la opacidad para que la imagen esté más apagada */
+    z-index: -2; /* Asegúrate de que el overlay esté detrás del texto */
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+p {
+    margin-bottom: 20px;
+}
+.highlight {
+    color: #e67e22;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .logo img {
+        width: 80px; /* Ajusta el tamaño de la logo para tabletas */
+    }
+    h1 {
+        font-size: 1.5em; /* Ajusta el tamaño de la fuente del encabezado para tabletas */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .logo img {
+        width: 60px; /* Ajusta el tamaño de la logo para móviles */
+    }
+    h1 {
+        font-size: 1.2em; /* Ajusta el tamaño de la fuente del encabezado para móviles */
+    }
+    p {
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente del párrafo para móviles */
+    }
+}
